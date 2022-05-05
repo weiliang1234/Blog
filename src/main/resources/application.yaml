@@ -1,0 +1,27 @@
+server:
+   port: 336
+#  port: 8080
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:zinchon.com/know?characterEncoding=utf8&serverTimezone=UTC
+    username: zinc
+    password: zinchon.cn
+#    url: jdbc:mysql://localhost:3306/myboke?characterEncoding=utf8&serverTimezone=UTC
+#    username: root
+#    password: 123456
+
+  servlet:
+    multipart:
+      max-file-size: 500MB
+      max-request-size: 500MB
+mybatis-plus:
+  global-config:
+    db-config:
+      id-type: uuid
+
+#自定义配置文件
+#上传视频本地保存地址
+#videoSavePath: /Users/soanr/Desktop/videos
+videoSavePath: D:/savevideos/videos
+#  D:\桌面文件\知否app\know-api-master\know-api-master\src
